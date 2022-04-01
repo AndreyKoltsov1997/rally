@@ -46,7 +46,7 @@ def init():
         )
     else:
         logger.info("Connecting directly to the Internet (no proxy support).")
-        __HTTP = urllib3.PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
+        __HTTP = urllib3.PoolManager(cert_reqs='CERT_NONE'))
 
 
 class Progress:
